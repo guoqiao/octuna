@@ -74,6 +74,16 @@ The setup script prompts for an admin username and password, hashes the password
 
 Open http://localhost:3030 to upload files. The admin panel is at http://localhost:3030/admin.
 
+### Docker
+
+After configuring `config.json` as above, build and run the container with:
+
+```
+make run
+```
+
+The web service is available at http://localhost:3030. The command mounts `config.json` read-only and persists uploads and metadata in the local `data/` directory.
+
 ## Configuration
 
 `config.json` keys:

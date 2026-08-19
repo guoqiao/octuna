@@ -394,6 +394,9 @@ table.retro td {
   border-top: 1px solid #808080;
   background: var(--silver);
   font-family: Tahoma, sans-serif;
+  /* The spin3d 3D animation overflows its box and toggles page scrollbars;
+     clip it so animated transforms can't extend the document scroll area. */
+  overflow: hidden;
 }
 .footer .links { margin: 4px 0; }
 .visitors {
